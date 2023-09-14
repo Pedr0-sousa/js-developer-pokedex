@@ -1,0 +1,448 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;    
+    
+}
+body{
+    height: 100%;
+}
+
+.bodySection{  
+    background-image: url(../Img/black-linen-2.png);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end; 
+    
+}
+
+.headerSection{      
+    margin: 0;    
+    display: flex; 
+    flex-direction: column;
+    align-items: center;            
+}
+
+
+.headerTitle{
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    font-size: 2rem;
+    text-shadow: #251f1f85 14px 12px 20px;  
+    position: relative;
+    z-index: 5;
+    text-transform: capitalize;  
+}
+
+.imgPokeDetail{
+    margin-top: 20px;      
+}
+
+.img{    
+     max-width: 150px;
+     position: relative;
+     z-index: 1;   
+}
+.sectionContentDetail{
+    min-height: 85vh;
+    margin: -50px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius:30px 30px 0px 0px;
+    background-color: #a2a1ab;
+    background-image: url(../Img/escheresque-dark.png);  
+}
+
+.textSection{          
+    display: grid;    
+    grid-template-areas: "types"                     
+                         "status";        
+    /* From https://css.glass background: #629c40;*/    
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    background-image: url(..///Img/escheresque-dark.png);    
+    padding: 10px 10px 10px 10px;
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 50px;
+    
+    
+}
+
+.textTitle{
+    font-size: 1.4rem; 
+    margin: 0;  
+    padding: 0;
+    text-shadow: #251f1f85 5px -1px 20px;  
+
+}
+
+.text{
+    margin: auto;
+    padding: 0;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    text-shadow: #251f1f85 8px 7px 20px;  
+}
+
+.types{    
+    grid-area: types;    
+    justify-content: center;
+    justify-items: center; 
+}
+
+.typesTextTitle{
+    display: flex;
+    justify-content: center;
+        
+}
+
+.type{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    text-shadow: #251f1f85 14px 12px 20px;
+    text-transform: capitalize;  
+}
+.typeText{
+    margin: 10px 0 10px 0;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.textStatus{
+    margin-right: 1rem;
+    
+}
+
+
+
+.status {
+    grid-area: status;
+    display: grid;
+    grid-template-areas: "status"
+                         "statusDetail";
+    justify-items: center;                     
+
+}
+
+.statusDetail{
+    display: grid;
+    grid-area: statusDetail;
+    grid-template-areas:
+                        "textHp hp"
+                        "textAtk atk"
+                        "textDef def"
+                        "textSpa spa"
+                        "textSpd spd"
+                        "textSpe spe"
+                        "textWgt wgt";
+                        justify-items: start;
+
+}
+.textKg{
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.textHp{
+    grid-area: textHp;
+}
+.hp{
+    grid-area: hp;
+}
+.textAtk{
+    grid-area: textAtk;
+}
+
+.atk{
+    grid-area: atk;
+}
+
+.textDef{
+    grid-area: textDef;   
+}
+
+.def{
+    grid-area: def;
+}
+
+.textSpa{
+    grid-area: textSpa;
+} 
+
+.spa{
+    grid-area:spa;
+}
+
+.textSpd{
+    grid-area: textSpd;
+}
+    
+.spd{
+    grid-area: spd;
+}
+
+.textSpe{
+    grid-area: textSpe;
+} 
+
+.spe{
+    grid-area: spe;
+}
+
+.textWgt{
+    grid-area: textWgt;
+} 
+
+.wgt{
+    grid-area: wgt;
+}
+
+.normal{
+    background-color: #bdb76b;
+}
+
+.fighting{   
+    background-color: #8f302c;
+}
+
+.flying{
+    background-color: #7b59db;
+}
+
+.poison{
+    background-color: #cb67cb;
+}
+
+.ground{
+    background-color: #c7a13f;
+}
+
+.rock{
+    background-color: #877a35;
+}
+
+.bug{
+    background-color: #7b8722;
+}
+
+.ghost{
+    background-color: #5d4b74;
+}
+
+.steel{
+    background-color: #8c8cab;
+}
+
+.fire{    
+    background-color: #EE8130;
+}
+
+.water{
+    background-color: #6390F0;
+}
+
+.grass{
+    background-color: #629c40;
+}
+
+.electric{    
+    background-color: #ffff00;
+    filter: brightness(0.9);     
+}
+
+.psychic{
+    background-color: #e02b62;  
+}
+
+.ice{
+    background-color: #6abbb8;
+}
+
+.dragon{
+    background-color: #521bd9;
+}
+
+.dark{
+    background-color: #56463b;
+}
+
+.fairy{
+    background-color: #b95d8a;
+}
+
+.unknown{
+    background-color: #567d72;
+}
+
+.shadow{
+    background-color: #3d3e57;   
+}
+
+@media screen and (min-width: 280px) {
+    .textSection{
+        margin-top: 90px;       
+    }    
+    .textStatus{
+        margin-right: 1.25rem;
+    }
+    .textTitle{
+        font-size: 1rem; 
+    }
+    .text{
+        font-size: 1.25rem; 
+    }
+    
+    .type{
+        font-size: 1.25rem;
+        margin: 0; 
+    }
+    .img{    
+        max-width: 120px;     
+   }
+    .headerTitle{
+        font-size: 2rem;
+        margin-top: 10px;
+    }     
+}
+
+
+@media screen and (min-width: 320px) {
+    .textSection{
+        margin-top: 90px;       
+    }    
+    .textStatus{
+        margin-right: 1.25rem;
+    }
+    .textTitle{
+        font-size: 1rem; 
+    }
+    .text{
+        font-size: 1.25rem; 
+    }
+   
+    .type{
+        font-size: 1.25rem;
+        margin: 0; 
+    }
+    .img{    
+        max-width: 150px;     
+   }
+    .headerTitle{
+        font-size: 2rem;
+        margin-top: 10px;
+    }     
+}
+
+@media screen and (min-width: 576px) {
+    .textSection{
+        margin-top: 10%;       
+    }
+    .textStatus{
+        margin-right: 1.5rem;
+    }
+    .textTitle{
+        font-size: 1.5rem; 
+    }
+    .text{
+        font-size: 1.5rem; 
+    }
+   
+    .type{
+        font-size: 1.5rem;
+        margin: 0; 
+    }
+    .img{    
+        min-width: 175px;     
+   } 
+    .headerTitle{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .textSection{
+        margin-top: 10%;       
+    }
+    .textStatus{
+        margin-right: 1.5rem;
+    }
+    .textTitle{
+        font-size: 1.5rem; 
+    }
+    .text{
+        font-size: 1.5rem; 
+    }
+    
+    .type{
+        font-size: 1.5rem;
+        margin: 0; 
+    }
+    .img{    
+        min-width: 200px;     
+   } 
+    .headerTitle{
+        font-size: 2rem;
+    }
+} 
+
+@media screen and (min-width: 1100px) {
+    .textSection{
+        margin-top: 5%;       
+    }
+    .textStatus{
+        margin-right: 1.75rem;
+    }
+    .textTitle{
+        font-size: 1.75rem; 
+    }
+    .text{
+        font-size: 1.75rem; 
+    }
+    
+    .type{
+        font-size: 1.75rem;
+        margin: 0; 
+    }
+    .img{    
+        min-width: 200px;     
+   } 
+    .headerTitle{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .textSection{
+        margin-top: 4%;       
+    }
+    .textStatus{
+        margin-right: 3rem;
+    }
+    .textTitle{
+        font-size: 3rem; 
+    }
+    .text{
+        font-size: 3rem; 
+    }    
+    .type{
+        font-size: 3rem;
+        margin: 0; 
+    }
+    .img{    
+        min-width: 300px;     
+   } 
+    .headerTitle{
+        font-size: 4rem;
+    }
+}
+   
+

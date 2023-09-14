@@ -1,0 +1,267 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+}
+a {
+    display: contents;
+}
+
+.bodySection{    
+    background-color: #a2a1ab;
+    background-image: url(../Img/escheresque-dark.png);   
+}
+
+.sectionContent{
+    padding: 1rem;
+}
+
+.title {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;     
+    text-shadow: #251f1f85 18px 12px 12px; 
+}
+
+.gridPokemons {    
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+}
+
+.gridPokemonsList{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1rem;    
+    color: #ffffff;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    box-shadow: 10px 5px 5px black;
+    background-image: url(../Img/black-linen-2.png); 
+    
+}
+
+.linkNewPage{
+    text-decoration: none;
+    color: black; 
+}
+
+.numberPokemon{    
+    color: black;
+    opacity: 0.6;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+        
+}
+
+.namePokemon{
+    margin: 0.25rem 0;
+    padding: 0;
+    text-shadow: #251f1f85 8px 7px 4px;           
+}
+
+.detailPokemon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.typesPokemon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.type{    
+    color: white;    
+    padding: 0.25rem 1rem;
+    font-size: 0.625rem;
+    border-radius: 1rem;
+    margin-top: 0.25rem;
+    filter: brightness(0.9);
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    
+      
+}
+
+.imgPokemon{
+    max-width: 100%;
+    height: 85px;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.normal{
+    background-color: #bdb76b;
+}
+
+.fighting{   
+    background-color: #8f302c;
+}
+
+.flying{
+    background-color: #7b59db;
+}
+
+.poison{
+    background-color: #cb67cb;
+}
+
+.ground{
+    background-color: #c7a13f;
+}
+
+.rock{
+    background-color: #877a35;
+}
+
+.bug{
+    background-color: #7b8722;
+}
+
+.ghost{
+    background-color: #5d4b74;
+}
+
+.steel{
+    background-color: #8c8cab;
+}
+
+.fire{    
+    background-color: #EE8130;
+}
+
+.water{
+    background-color: #6390F0;
+}
+
+.grass{
+    background-color: #629c40;
+}
+
+.electric{    
+    background-color: #ffff00;
+    filter: brightness(0.9);     
+}
+
+.psychic{
+    background-color: #e02b62;  
+}
+
+.ice{
+    background-color: #6abbb8;
+}
+
+.dragon{
+    background-color: #521bd9;
+}
+
+.dark{
+    background-color: #56463b;
+}
+
+.fairy{
+    background-color: #b95d8a;
+}
+
+.unknown{
+    background-color: #567d72;
+}
+
+.shadow{
+    background-color: #3d3e57;   
+}
+
+.morePokemons{
+    display: flex;
+    justify-content: center;
+    
+       
+}
+
+#loadBtn {
+    align-items: center;
+    background-color: #a2a1ab;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 0.5rem;  
+    box-shadow: 10px 7px 20px 0px black; 
+    color: #fff;
+    cursor: pointer;  
+    font-size: 1.2rem;    
+    margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+    padding: 0.313rem 2rem;
+    text-align: center;    
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;    
+  }
+  
+  #loadBtn:hover {
+    box-shadow: 10px 7px 20px 0px black; 
+    opacity: .75;
+  }
+
+@media screen and (min-width: 280px) {
+    .sectionContent{
+        max-width: 280px;
+        margin: auto;
+    }
+    .gridPokemons{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .sectionContent{
+        max-width: 576px;
+        margin: auto;
+    }
+    .gridPokemons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sectionContent{
+        max-width: 768px;
+        margin: auto;
+    }
+    .gridPokemons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sectionContent{
+        max-width: 992px;
+        margin: auto;
+    }
+    .gridPokemons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .sectionContent{
+        max-width: 1400px;
+        margin: auto;
+    }
+    .gridPokemons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
